@@ -38,11 +38,12 @@ public class Main {
 	}
 
 	public static void getSellabilityReport(Melon[] melons){
-		for (int i=0; i<melons.length; i++){
-		
-			Melon currentMelon = melons[i];
 
+		for (int i=0; i<melons.length; i++){
+			Melon currentMelon;
 			String sellableString;
+			currentMelon = melons[i];
+
 			if (currentMelon.isSellable()){
 				sellableString = "CAN BE SOLD";
 			} else {
